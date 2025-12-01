@@ -1,7 +1,3 @@
-/* ------------------------------------------
-   GLOBAL DESKTOP STYLES
-------------------------------------------- */
-
 body {
     margin: 0;
     padding: 60px;
@@ -21,8 +17,6 @@ body {
     margin: 0 0 20px;
     color: #ffffff;
 }
-
-/* ---------- TOP SECTION (Desktop: side-by-side) ---------- */
 
 .top-section {
     display: flex;
@@ -61,8 +55,6 @@ body {
     opacity: 0.9;
 }
 
-/* ---------- SKILLS ---------- */
-
 .section-title {
     margin-top: 50px;
     font-size: 28px;
@@ -82,8 +74,6 @@ body {
     border-radius: 14px;
     font-size: 15px;
 }
-
-/* ---------- EXPERIENCE ---------- */
 
 .experience-list {
     margin-top: 25px;
@@ -119,8 +109,6 @@ body {
     font-size: 13px;
 }
 
-/* ---------- BUTTONS ---------- */
-
 .buttons {
     margin-top: 40px;
     display: flex;
@@ -145,10 +133,6 @@ body {
     font-weight: bold;
 }
 
-/* ------------------------------------------
-   BOTTOM NAV
-------------------------------------------- */
-
 .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -172,10 +156,6 @@ body {
 .bottom-nav .active {
     color: #1dd5cc;
 }
-
-/* ------------------------------------------
-   MOBILE VERSION
-------------------------------------------- */
 
 @media screen and (max-width: 768px) {
 

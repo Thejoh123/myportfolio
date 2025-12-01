@@ -8,30 +8,32 @@
 </head>
 <body>
 
-    <section class="contact-section">
+<section class="contact-section">
 
-        <h1 class="page-title">Contact Me</h1>
-        <p class="page-subtitle">Let's work together</p>
+    <h1 class="page-title">Contact Me</h1>
+    <p class="page-subtitle">Let's work together</p>
 
-        <p class="intro-text">
-            Have a project idea or want to collaborate?  
-            Fill out the form below and I’ll get back to you soon.
-        </p>
+    <p class="intro-text">
+        Have a project idea or want to collaborate?  
+        Fill out the form below and I'll get back to you soon.
+    </p>
 
-        <!-- Form Card -->
-        <div class="form-card">
-    <form class="contact-form" onsubmit="sendWhatsAppMessage(); return false;">
-    <label>Full Name</label>
-    <input id="name" type="text" placeholder="Enter your full name" required>
+    <!-- Form Card -->
+    <div class="form-card">
+        <form class="contact-form" onsubmit="sendWhatsAppMessage(); return false;">
+            <label>Full Name</label>
+            <input id="name" type="text" placeholder="Enter your full name" required>
 
-    <label>Email Address</label>
-    <input id="email" type="email" placeholder="Enter your email address" required>
+            <label>Email Address</label>
+            <input id="email" type="email" placeholder="Enter your email address" required>
 
-    <label>Message</label>
-    <textarea id="message" placeholder="Your message here..." required></textarea>
+            <label>Message</label>
+            <textarea id="message" placeholder="Your message here..." required></textarea>
 
-    <button type="submit" class="send-btn">Send Message</button>
-</form>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </div>
+</section>
 
 <script>
 function sendWhatsAppMessage() {
@@ -39,26 +41,30 @@ function sendWhatsAppMessage() {
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
 
-    let text = `Hello! My name is ${name}.%0AEmail: ${email}%0A%0A${message}`;
-    let phone = "234XXXXXXXXXX";  // ← Your WhatsApp number
+    let text = `Hello! My name is ${name}.
+Email: ${email}
 
-    window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+${message}`;
+
+    let encodedText = encodeURIComponent(text);
+
+    let phone = "2349077027113";  
+
+    window.open(`https://wa.me/${phone}?text=${encodedText}`, "_blank");
 }
 </script>
-
         </div>
 
         <p class="social-label">Or connect with me</p>
 
         <div class="social-icons">
-            <a href="#"><img src="/images/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="/images/github.png" alt="GitHub"></a>
-            <a href="#"><img src="/images/communication.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/udoh-joy-528091298/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Thejoh123"><img src="images/github.png" alt="GitHub"></a>
+            <a href="mailto:udohjoy05@gmail.com"><img src="images/communication.png" alt="Email"></a>
         </div>
 
     </section>
 
-    <!-- Bottom Navigation -->
     <nav class="bottom-nav">
         <a href="index.html">Home</a>
         <a href="project.html">Projects</a>

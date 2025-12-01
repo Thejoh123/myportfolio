@@ -1,6 +1,3 @@
-/* -----------------------------------
-   GLOBAL
------------------------------------ */
 body {
     margin: 0;
     padding: 0;
@@ -16,9 +13,6 @@ body {
     text-align: center;
 }
 
-/* -----------------------------------
-   HEADINGS
------------------------------------ */
 .page-title {
     font-size: 28px;
     font-weight: bold;
@@ -31,20 +25,16 @@ body {
     margin-top: 5px;
 }
 
-/* Intro text */
 .intro-text {
     font-size: 14px;
     color: #aab2c8;
     line-height: 1.5;
     margin-top: 15px;
-    text-align: center;      /* FIXED */
-    margin-left: auto;       /* FIXED */
-    margin-right: auto;      /* FIXED */
+    text-align: center;      
+    margin-left: auto;      
+    margin-right: auto;      
 }
 
-/* -----------------------------------
-   CARD FORM
------------------------------------ */
 .form-card {
     background: #13151f;
     border: 1px solid #1f2230;
@@ -92,9 +82,6 @@ textarea {
     font-weight: bold;
 }
 
-/* -----------------------------------
-   SOCIAL ICONS
------------------------------------ */
 .social-label {
     margin-top: 35px;
     color: #9aa2b7;
@@ -116,14 +103,11 @@ textarea {
     padding: 8px;
 }
 
-/* -----------------------------------
-   FIXED BOTTOM NAV (MATCHES HOME)
------------------------------------ */
 .bottom-nav {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;                /* FULL WIDTH LIKE HOME */
+    width: 100%;                
     background: #13151d;
     display: flex;
     justify-content: space-around;
@@ -141,9 +125,6 @@ textarea {
     color: #2d51ff;
 }
 
-/* -----------------------------------
-   DESKTOP STYLING (SAFE FIX)
------------------------------------ */
 @media (min-width: 768px) {
 
     .contact-section {
