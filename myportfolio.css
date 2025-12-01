@@ -1,0 +1,291 @@
+/* ============================================================
+   GLOBAL STYLING
+============================================================ */
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0A0F1F;
+    color: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ============================================================
+   HERO SECTION (shared structure)
+============================================================ */
+
+.hero {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+/* LEFT (Profile image) */
+.profile-img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1dd5cc;
+    box-shadow: 0 0 22px rgba(29, 213, 204, 0.3);
+    transition: 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 32px rgba(29, 213, 204, 0.5);
+}
+
+/* RIGHT (text section) */
+.hero-right {
+    max-width: 550px;
+}
+
+.name {
+    font-size: 52px;
+    margin: 0 0 10px 0;
+}
+
+.role {
+    font-size: 24px;
+    color: #1dd5cc;
+    margin-bottom: 25px;
+}
+
+.bio {
+    font-size: 19px;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.btn-primary {
+    background: #2d51ff;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #1a35cc;
+}
+
+.btn-outline {
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #3f4d78;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #3f4d7880;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    width: 52px;
+    height: 52px;
+    background: #11172D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1dd5cc33;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #1dd5cc;
+    transform: translateY(-4px);
+}
+
+/* Status (mostly mobile) */
+.status {
+    display: none; /* Hidden on desktop */
+    gap: 8px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #2ecc71;
+    border-radius: 50%;
+}
+
+
+/* ============================================================
+   FEATURED WORK
+============================================================ */
+
+.featured {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+}
+
+.featured h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.card {
+    background: #1a1d27;
+    border-radius: 18px;
+    padding: 18px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    border-radius: 16px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #b0b3c0;
+    margin-top: 6px;
+}
+
+
+/* ============================================================
+   NAVIGATION BAR
+============================================================ */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px 0;
+    background: #111420;
+    border-top: 1px solid #2a2d3b;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #9ca0b1;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #1dd5cc;
+}
+
+.main-nav .active {
+    color: #1dd5cc;
+    font-weight: 600;
+}
+
+
+/* ============================================================
+   MOBILE LAYOUT (max-width: 768px)
+============================================================ */
+
+@media screen and (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 30px 20px;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .name {
+        font-size: 34px;
+        margin-top: 20px;
+    }
+
+    .role {
+        font-size: 18px;
+    }
+
+    .bio {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .status {
+        display: flex;
+        justify-content: center;
+    }
+
+    .featured {
+        padding: 20px;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mobile bottom nav bar */
+    .main-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-around;
+        padding: 14px 0;
+        background: #13151d;
+        border-top: 1px solid #222533;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+}

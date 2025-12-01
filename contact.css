@@ -1,0 +1,191 @@
+/* -----------------------------------
+   GLOBAL
+----------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1118;
+    color: #ffffff;
+}
+
+.contact-section {
+    max-width: 380px;
+    margin: auto;
+    padding: 25px 20px 120px;
+    text-align: center;
+}
+
+/* -----------------------------------
+   HEADINGS
+----------------------------------- */
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.page-subtitle {
+    font-size: 15px;
+    color: #9aa2b7;
+    margin-top: 5px;
+}
+
+/* Intro text */
+.intro-text {
+    font-size: 14px;
+    color: #aab2c8;
+    line-height: 1.5;
+    margin-top: 15px;
+    text-align: center;      /* FIXED */
+    margin-left: auto;       /* FIXED */
+    margin-right: auto;      /* FIXED */
+}
+
+/* -----------------------------------
+   CARD FORM
+----------------------------------- */
+.form-card {
+    background: #13151f;
+    border: 1px solid #1f2230;
+    border-radius: 18px;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 13px;
+    color: #9ca3b8;
+}
+
+input,
+textarea {
+    background: #0f1118;
+    border: 1px solid #1d2030;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #e5e7ef;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.send-btn {
+    margin-top: 10px;
+    background: #2ce5d0;
+    color: #0b0c10;
+    padding: 14px;
+    border: none;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* -----------------------------------
+   SOCIAL ICONS
+----------------------------------- */
+.social-label {
+    margin-top: 35px;
+    color: #9aa2b7;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #131824;
+    padding: 8px;
+}
+
+/* -----------------------------------
+   FIXED BOTTOM NAV (MATCHES HOME)
+----------------------------------- */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;                /* FULL WIDTH LIKE HOME */
+    background: #13151d;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 1px solid #222533;
+}
+
+.bottom-nav a {
+    color: #9ca0b1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bottom-nav a.active {
+    color: #2d51ff;
+}
+
+/* -----------------------------------
+   DESKTOP STYLING (SAFE FIX)
+----------------------------------- */
+@media (min-width: 768px) {
+
+    .contact-section {
+        max-width: 720px;
+        padding: 40px 30px 160px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .page-subtitle {
+        font-size: 18px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+        max-width: 75%;
+    }
+
+    .form-card {
+        padding: 35px;
+        margin-top: 35px;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+        padding: 15px 18px;
+    }
+
+    .send-btn {
+        font-size: 17px;
+        padding: 16px;
+        width: 220px;
+        margin: 15px auto 0;
+        display: block;
+    }
+
+    .social-icons img {
+        width: 48px;
+        height: 48px;
+    }
+
+}

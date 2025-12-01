@@ -1,0 +1,240 @@
+/* ------------------------------------------
+   GLOBAL DESKTOP STYLES
+------------------------------------------- */
+
+body {
+    margin: 0;
+    padding: 60px;
+    padding-bottom: 120px; /* space for bottom nav */
+    font-family: 'Poppins', sans-serif;
+    background: #0A0F1F;
+    color: #ffffff;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 42px;
+    margin: 0 0 20px;
+    color: #ffffff;
+}
+
+/* ---------- TOP SECTION (Desktop: side-by-side) ---------- */
+
+.top-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.profile-img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1dd5cc;
+}
+
+.intro {
+    max-width: 600px;
+}
+
+.name {
+    font-size: 42px;
+    margin: 0;
+}
+
+.role {
+    font-size: 20px;
+    color: #1dd5cc;
+    margin-top: 8px;
+}
+
+.bio {
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+/* ---------- SKILLS ---------- */
+
+.section-title {
+    margin-top: 50px;
+    font-size: 28px;
+    color: #e6e9f5;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.skills span {
+    background: #11172D;
+    padding: 10px 18px;
+    border-radius: 14px;
+    font-size: 15px;
+}
+
+/* ---------- EXPERIENCE ---------- */
+
+.experience-list {
+    margin-top: 25px;
+}
+
+.experience-card {
+    background: #11172D;
+    padding: 20px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+}
+
+.icon1 { background: #2e3a43; }
+.icon2 { background: #24386c; }
+.icon3 { background: #5c4630; }
+
+.company {
+    color: #9ca3c1;
+    font-size: 14px;
+}
+
+.duration {
+    color: #7d829c;
+    font-size: 13px;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    background: #1dd5cc;
+    color: #0A0F1F;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-outline {
+    border: 2px solid #1dd5cc;
+    padding: 14px 32px;
+    border-radius: 30px;
+    color: #1dd5cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------------------------------------
+   BOTTOM NAV
+------------------------------------------- */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #13151d;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0;
+    border-top: 1px solid #222533;
+    z-index: 1000;
+}
+
+.bottom-nav a {
+    color: #9ca0b1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bottom-nav .active {
+    color: #1dd5cc;
+}
+
+/* ------------------------------------------
+   MOBILE VERSION
+------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 20px;
+        padding-bottom: 100px;
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .top-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .profile-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .role {
+        font-size: 16px;
+    }
+
+    .bio {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .buttons a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .skills span {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .experience-card {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
